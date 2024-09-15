@@ -1,17 +1,16 @@
 body {
+    margin: 0;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
     font-family: Arial, sans-serif;
 }
 
 #container {
     display: flex;
-    width: 80vw;
-    height: 50vh;
+    width: 100vw;  /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
 }
 
 .panel {
@@ -20,10 +19,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: black;
-    font-size: 3rem;  /* Increased the text font size */
     padding: 20px;
     position: relative;
+    overflow: hidden;
+    text-align: center;
 }
 
 #left-panel {
@@ -32,6 +31,15 @@ body {
 
 #right-panel {
     background-color: white;
+}
+
+.text {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    white-space: normal; /* Allow wrapping */
+    font-size: 5vw; /* Base size */
+    line-height: 1.2; /* Adjust for proper line height */
 }
 
 .arrow {
@@ -43,8 +51,6 @@ body {
     text-align: center;  /* Centers the arrow */
 }
 
-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 1.5rem;
+.panel .arrow {
+    pointer-events: none;  /* Ignore clicks on the arrow itself */
 }
