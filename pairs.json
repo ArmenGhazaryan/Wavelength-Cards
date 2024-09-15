@@ -1,0 +1,10 @@
+{
+  "pairs": [
+    ["Bad", "Good"],
+    ["Mildly addictive", "Highly addictive"],
+    ["Hot", "Cold"],
+    ["Normal", "Weird"],
+    ["Colorless", "Colorful"],
+    ["Low calorie", "High calorie"]
+  ]
+}
